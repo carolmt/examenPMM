@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MoveListRecyclerFragment">
+
+    <TextView
+        android:id="@+id/movement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:text="Movements"
+        android:textSize="34sp"
+
+        android:background="#0000FF"
+
+        android:backgroundTint="@color/teal_200"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        tools:listitem="@layout/viewholder_move_list"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintTop_toBottomOf="@id/movement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="25dp"/>
+
+    <Button
+        android:id="@+id/botonIrJuegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver juegos"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="613dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
